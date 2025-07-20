@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real Promo Codes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+    #coupon-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .coupon-card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+      transition: box-shadow 0.3s ease;
+    }
+    .coupon-card:hover {
+      box-shadow: 0 6px 12px rgb(0 0 0 / 0.1);
+    }
+    .coupon-card h3 {
+      margin: 0 0 8px 0;
+      color: #34495e;
+    }
+    .coupon-card p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+    .coupon-card code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-weight: bold;
+      color: #d35400;
+    }
+    .coupon-card small {
+      display: block;
+      margin-top: 8px;
+      color: #999;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Real Promo Codes - Updated July 20, 2025 🔥</h1>
+  <div id="coupon-container"></div>
+
+  <script>
+    const coupons = [
+      {store: "Amazon", code: "SAVE50", discount: "50% off select items", added: "2025-07-20"},
+      {store: "Target", code: "OME", discount: "25% off your order", added: "2025-07-19"},
+      {store: "eBay", code: "TEN", discount: "10% off your order", added: "2025-07-20"},
+      {store: "Vivaia", code: "10AFF", discount: "Extra 10% off select styles", added: "2025-07-18"},
+      {store: "AliExpress", code: "IFPSP10T", discount: "$3 off $29+", added: "2025-07-14"},
+      {store: "Temu", code: "ctj", discount: "30% off first-time orders", added: "2025-07-20"},
+      {store: "Home Depot", code: "HOME10", discount: "10% off select items", added: "2025-07-16"},
+      {store: "Sephora", code: "SEPH15", discount: "15% off all items", added: "2025-07-20"},
+      {store: "Raid: Shadow Legends", code: "RAID2025", discount: "In-game loot (energy refills, silver)", added: "2025-07-17"},
+      {store: "Boden", code: "3V47", discount: "25% off children's styles", added: "2025-07-16"}
+    ];
+
+    const container = document.getElementById('coupon-container');
+    coupons.forEach(c => {
+      const card = document.createElement('div');
+      card.className = 'coupon-card';
+      card.innerHTML = `
+        <h3>${c.store}</h3>
+        <p><b>Code:</b> <code>${c.code}</code></p>
+        <p>${c.discount}</p>
+        <small>Added on: ${c.added}</small>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
